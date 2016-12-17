@@ -1,21 +1,28 @@
-class CashRegister :
-   
-   def __init__(self) :
-      self._itemCount = 0
-      self._totalPrice = 0.0
-      
-   
+# class for cashregister
+class CashRegister():
+   # The init method or constructor
+   def __init__(self, itemCount=0, totalPrice=0.0) :
+      self._itemCount = itemCount
+      self._totalPrice = totalPrice
+      self._change = 0
+   # The following method is mutator for the class.
    def addItem(self, price) :
+      #adds each item to the item count 
       self._itemCount = self._itemCount + 1
+      #adds the price to the total price 
       self._totalPrice = self._totalPrice + price 
-      
-   
+
+   def giveChange(self, payment) :
+       self._itemCount = self._itemCount + 1
+       self._change = payment - self._totalPrice
+       return self._change # returns change
+   # The following method are accessors for the class.
    def getTotal(self) :
       return self._totalPrice
-
+   # The following method are accessors for the class.
    def getCount(self) :
       return self._itemCount
-
+   # Clears out both the itemcount and total price in the cash register class 
    def clear(self) :
       self._itemCount = 0
       self._totalPrice = 0.0
