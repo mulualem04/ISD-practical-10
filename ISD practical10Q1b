@@ -1,0 +1,8 @@
+from student import *# import the student.py module
+
+def main():
+    # creating new object
+    s4=Student("Abeba", "Tesfaye", "32546388", "Management")
+    s4.showDetails() # call the method to print detals of particular student
+
+main() # call the main function
