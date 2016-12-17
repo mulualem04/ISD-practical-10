@@ -1,0 +1,11 @@
+from cashregister import * # imports cashregister.py module
+
+def main():
+    register1=CashRegister() # default object
+    register2=CashRegister(4, 5.5) # object of cashregister class
+    print(register2.getCount()) # call the getCount method and print the result
+    print(register2.getTotal()) # call the getTotal method and print the result
+    print(register2.giveChange(10))# call the giveChange method and print the result
+
+
+main() #calling the main function
