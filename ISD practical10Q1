@@ -1,0 +1,30 @@
+# Class for Student
+class Student:
+
+    # The init method or constructor
+    def __init__(self, firstName="Yetages", lastName="Bireda", studentID="21329429", course="Computer Science"):
+        # Instance Variables 
+        self.firstName = firstName
+        self.lastName = lastName
+        self.studentID = studentID
+        self.course = course
+    # The following method are accessors for the class.
+    def getName(self):
+        print(self.firstName)
+        print(self.lastName)
+    # The following method are accessors for the class.
+    def getCourse(self):
+        print(self.course)
+    # The following method are accessors for the class.
+    def getId(self):
+        print(self.studentID)
+    #  Adds an instance variable 
+    def setName(self, newFirstName):
+        self.self.firstName = newFirstName
+    # Adds an instance variable 
+    def setName(self, newLastName):
+        self.self.lastName = newLastName
+
+    def showDetails(self): # prints details of particular student
+        print("Student"+" "+self.firstName+" "+" "+self.lastName+" "+"whose ID"+" "+self.studentID+" "+"is taking the course"+" "+self.course)
+
